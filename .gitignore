@@ -1,0 +1,3 @@
+# .girignore
+venv
+__pycache__

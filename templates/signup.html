@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/signup.css">
+    <title>Password Manager - Sign Up</title>
+</head>
+
+<body class="align">
+    <!-- <div class="container">
+        <h1>Sign Up</h1>
+        <form action="{{ url_for('signup') }}" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="{{ url_for('login') }}">Log in here</a></p>
+    </div> -->
+
+
+    <div class="signupFrm">
+        <form action="{{ url_for('signup') }}" method="POST" class="form">
+            <h1 class="title">Sign up</h1>
+
+            <div class="inputContainer">
+                <input type="text" class="input" name="name" placeholder="a">
+                <label for="name" class="label" required>Name</label>
+            </div>
+    
+            <div class="inputContainer">
+                <input type="text" class="input" name="email" placeholder="a">
+                <label for="email" class="label" required>Email</label>
+            </div>
+    
+            <div class="inputContainer">
+                <input type="text" class="input" name="password" placeholder="a">
+                <label for="password" class="label"><i> Password</i></label>
+            </div>
+    
+            <input type="submit" class="submitBtn" value="Sign up">
+
+            <p class="login-btn">Already have an account? <a href="{{ url_for('login') }}"> <button class="submitBtn-1">Login here</a></button></p>
+        </form>
+    </div>
+
+
+</body>
+
+
+</html>
